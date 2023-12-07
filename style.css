@@ -1,0 +1,123 @@
+#wrapper {
+	background-color: #dff8e9;
+	color: #336e37;
+	width: 80%;
+	margin: auto;
+	min-width: 940px;
+}
+header {
+	background-color: #336e37;
+	color: #336e37;
+	font-size: 100%;
+	padding: 10px 10px 10px 155px;
+	height: 200px;
+}
+body {
+	background-color: #dff8e9;
+	padding: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 800px;
+}
+h1 {
+	background-color: #2b6d2f;
+	color: #dff8e9;
+	padding-left: 5px;
+}
+h2 {
+	background-color: #336e37;
+	color: #dff8e9;
+	opacity: 0.8;
+}
+p {
+	color: #2b6d2f;
+}
+nav ul {
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 5px;
+}
+nav li {
+	display: inline;
+}
+nav a {
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.image {
+	float: right;
+	height: 130px;
+	width: 200px;
+}
+.image-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.image-logo-container {
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+.image-container div {
+	text-align: center;
+	width: 200px;
+}
+.image-container img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+#logo {
+	max-width: 80px;
+	height: auto;
+	display: inline-block;
+	align-content: center;
+	float: left;
+}
+form {
+	background-color: #EAEAEA;
+	font-family: Arial, sans-serif;
+	width: 350px;
+	padding: 10px;
+}
+label {
+	float: left;
+	clear: left;
+	display: block;
+	width: 100px;
+	padding-right: 10px;
+	margin-top: 10px;
+	text-align: right;
+}
+input {
+	display: block;
+	margin-top: 10px;
+}
+textarea {
+	display: block;
+	margin-top: 10px;
+}
+input[type="submit"] {
+	margin-left: 110px;
+}
+.button {
+	border: #336e37 solid 3px;
+	border-radius: 15px;
+	width: 100px;
+}
+img.avatar {
+	width: 60%;
+	border-radius: 50%;
+  }
+
+  .carousel-cell {
+	margin-right: 10px; /* Puedes ajustar el valor según tu preferencia */
+  }
+  
+  /* Asegúrate de que el último elemento no tenga margen derecho para evitar un espacio adicional */
+  .carousel-cell:last-child {
+	margin-right: 0;
+  }
