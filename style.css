@@ -65,6 +65,7 @@ nav ul ul { position: absolute;
 	text-align: left; 
 	display: none; 
 	border:#dff8e9;
+	z-index: 999;
 }
 nav li { padding: 0.5em;
    display: inline-block;
@@ -74,6 +75,7 @@ nav ul ul li { border: 1px solid #2b6d2f;
  	width: 8em;
  	padding-left: 1em; 
  	margin-left: 0; 
+	font-size:medium;
 }
 nav li:hover ul { display: block; 
 }
