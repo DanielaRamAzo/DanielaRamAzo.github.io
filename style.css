@@ -33,7 +33,7 @@ h1 {
 	font-size:20px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header h1{
+header h1 {
 	background-color: #ffffff;
 	opacity: 50%;
 	color: #2b6d2f;
@@ -94,10 +94,13 @@ nav li:hover ul { display: block;
 nav a { text-decoration: none; 
 	display: block;
 }
-nav a:link { color: #dff8e9; }
-nav a:visited { color: #dff8e9; }
+nav a:link { color: #dff8e9; 
+}
+nav a:visited { color: #dff8e9; 
+}
 nav a:hover {  color: #dff8e9;
-	background-color: #4d8e71}
+	background-color: #4d8e71;
+}
 .image {
 	float: right;
 	height: 130px;
@@ -129,7 +132,7 @@ nav a:hover {  color: #dff8e9;
 	z-index:999;
 }
 form {
-	background-color: #EAEAEA;
+	background-color: #d1e4dc;
 	font-family: Arial, sans-serif;
 	width: 350px;
 	padding: 10px;

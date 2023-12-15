@@ -7,6 +7,14 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+<style>
+form {
+	background-color: #d1e4dc;
+	width: 450px;
+	padding: 10px;
+}
+</style>
+
 </head>
 <body>
 
@@ -50,24 +58,49 @@
 		</ul> 
 		</nav>
 	<Main>
-		<h1>Register</h1>
-		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
-		<form method="get">
-			First Name: <input id="fname" name="fname" type="text"><br>
-			Last Name: <input id="lname" name="lname" type="text"><br>
 
-			E-mail: <input id="email" name="email" type="email"><br>
+			<h1>Formulario de Producto</h1>
 			
-			Phone: <input id="phone" name="phone" type="tel"><br>
+			<form action="/procesar_producto" method="post" enctype="multipart/form-data">
+				<!-- Nombre del producto -->
+				<label for="nombre">Product Name:</label><br>
+				<input type="text" id="name" name="name" required ><br>
 			
-            Address:<br>
-			<textarea cols="20" id="address" name="address" rows="2"></textarea><br>
+				<!-- Descripción del producto -->
+				<label for="description">Product Description:</label><br>
+				<textarea id="description" name="description" required></textarea><br>
 			
-			Set Password: <input id="password" name="pass" type="password"><br>
+				<!-- Categoría -->
+				<label for="category">Category:</label><br>
+				<select id="category" name="category" required>
+					<option value="cat1">Baby boy</option>
+					<option value="cat2">Baby girl</option>
+					<option value="cat3">Toys</option>
+					<option value="cat1">Accesories</option>
+					<option value="cat2">Neutral clothes</option>
+					<option value="cat3">Mom/Pregnancy</option>
+				</select><br>
 			
-			<input id="terms and conditions" name="terms" type="checkbox">Accept terms <br>
-			<input id="mySubmit" type="submit" value="Register">
-		</form>
+				<!-- Talla -->
+				<label for="talla">Product Size/Age:</label><br>
+				<input type="text" id="talla" name="talla" required><br>
+			
+				<!-- Color -->
+				<label for="color">Product Color:</label><br>
+				<input type="text" id="color" name="color" required><br>
+
+				<!-- Talla -->
+				<label for="talla">Price (at least price):</label><br>
+				<input type="text" id="precio" name="precio" required><br>
+			
+				<!-- Subir fotos del producto -->
+				<label for="fotos">Product Photos:</label><br>
+				<input type="file" id="fotos" name="fotos[]" accept="image/*" multiple required><br>
+			
+				<!-- Botón de envío -->
+				<button type="submit">Upload Product</button><br>
+			</form>
+
 	</Main>
 	<br>
 	<div>
